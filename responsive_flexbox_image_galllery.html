@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            font: italic small-caps 600 32px/10px georgia;
+
+        }
+
+        .row {
+            display: flex;
+            padding: 0 5px;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            padding: 0 4px;
+            flex: 25%;
+            max-width: 70%;
+        }
+
+        .column img {
+            margin-top: 8px;
+            width: 100%;
+            padding: 0 4px;
+            vertical-align: middle;
+        }
+
+        @media (max-width:800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+
+            }
+            .header{
+                padding: 30px;
+            text-align: center;
+            font: italic small-caps 600 32px/15px georgia;
+            }
+
+        }
+
+        @media (max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+            .header{
+                padding: 20px;
+            text-align: center;
+            font: italic small-caps 600 32px/40px georgia;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1> Image Gallery </h1>
+        <h3> Responsive flexbox</h3>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="gallery/1.jpg">
+            <img src="gallery/2.jpg">
+        </div>
+            <div class="column">
+                <img src="gallery/4.jpg">
+                <img src="gallery/3.jpg">
+
+            </div>
+            <div class="column">
+                <img src="gallery/5.jpg">
+                <img src="gallery/11.jpg">
+            </div>
+
+
+
+
+        <div class="column">
+            <img src="gallery/6.jpg">
+            <img src="gallery/7.jpg">
+        </div>
+            <div class="column">
+
+                <img src="gallery/8.jpg">
+                <img src="gallery/9.jpg">
+            </div>
+            <div class="column">
+
+                <img src="gallery/10.jpg">
+                <img src="gallery/12.jpg">
+
+            </div>
+
+
+
+    </div>
+</body>
+
+</html>
